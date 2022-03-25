@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+<body>
+
+  <div class="mainContainer">
+    <img class="backgroundImg desktopImg" src="./assets/desktop/image-host.jpg"/>
+    <img class="backgroundImg tabletImg" src="./assets/tablet/image-host.jpg"/>
+    <img class="backgroundImg mobileImg" src="./assets/mobile/image-host.jpg"/>
+    <picture id="logo">
+      <img src="./assets/desktop/logo.svg">
+    </picture>
+
+    <main>
+      <h1>Publish your podcasts <span class="white-text">everywhere.</span></h1>
+      <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+
+      <div id="logo-line">
+        <img id="spotify" src="./assets/desktop/spotify.svg">
+        <img id="apple" src="./assets/desktop/apple-podcast.svg">
+        <img id="google" src="./assets/desktop/google-podcasts.svg">
+        <img id="pocket" src="./assets/desktop/pocket-casts.svg">
+      </div>
+      
+      <form action="#">
+        <input type="text" placeholder="Email Address" id="emailInput">
+        <input type="submit" id="submitBtn" value="Request Access" onclick="ValidateEmail()">
+      </form>
+      <div id="formErrorMsg">Oops! Please check your email</div>
+    </main>
+
+    <img id="decorativeDots" src="./assets/desktop/bg-pattern-dots.svg" alt="">
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
